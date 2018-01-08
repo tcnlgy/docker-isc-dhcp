@@ -1,0 +1,8 @@
+version: "3"
+services:
+    dhcpd:
+        image: tcnlgy/docker-isc-dhcp
+        volumes:
+            - ./dhcpd.conf:/etc/dhcp/dhcpd.conf
+        ports:
+            - "67:67"
